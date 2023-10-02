@@ -204,7 +204,7 @@ body, html {
 }
 
 .albumes h2,p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: bold;
     margin: 0%;
     text-align: center;
@@ -232,17 +232,23 @@ body, html {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
 }
+.form_mapa h2{
+  font-family:'gothamexp', sans-serif; 
+  font-size: 2.6em;
+  margin-top: 0px;
+  
+}
 
 
 .formulario_contacto{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: auto;
     
 }
 .formulario_contacto input{
     height: 40px;
-    width: 30vw;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
 }
@@ -265,8 +271,8 @@ button{
     
         /* -- integrantes --- */
 .titulo{
-    font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-family: 'gothamexp', sans-serif;
+    font-size: 3em;
     text-align: center;
     width: 90%;
     margin: auto;
@@ -285,7 +291,7 @@ button{
 }
 
 .integrante h4{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'rocks', sans-serif;
     font-size: 3em;
     margin-top: 0%;
 }
