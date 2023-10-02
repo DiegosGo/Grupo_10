@@ -427,10 +427,12 @@ footer  li,a, p {
         font-size: 2em;
         margin: auto;
         font-size: 3em;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px; 
     }
 
+    #block {
+      height: 60%;
+    }
 
     footer .footer_columna {
         width: 90%;
@@ -454,3 +456,4 @@ footer  li,a, p {
     .articulo_historia{width:90% ;}
 
     .collumn {width: 100%;}
+
