@@ -41,21 +41,22 @@
     <section class="form_mapa">
       <article>
           <h2 >Formulario de contacto</h2>
-          <form class="formulario_contacto">
+          <form class="formulario_contacto" name="formulario">
               <label >Nombre y Apellido</label>
-              <input type="text" placeholder="Ingrese su Nombre y Apellido">
+              <input name="fnombre" type="text" placeholder="Ingrese su Nombre y Apellido" value="">
               <label>Email</label>
-              <input  type="email" placeholder="Ingrese su correo">
+              <input name="fcorreo" type="email" placeholder="Ingrese su correo">
               <label >Mensaje</label>
               <textarea name="" id="" cols="30" rows="5" placeholder="Ingrese su Mensaje..."></textarea>
-              <button type="submit" >Enviar</button>
+              <button id="btn" onclick="mensaje"  type="submit"> Enviar</button>
           </form>
+          <p class="mensajeEnviado"></p>
       </article>
       <article>
         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4200.738595009238!2d-58.450758181280285!3d-34.545265525455235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae5dde0ed%3A0x79bbb6038fd01b0c!2sClub%20Atl%C3%A9tico%20River%20Plate!5e0!3m2!1ses!2sar!4v1696199254248!5m2!1ses!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </article>
     </section>
-
+    
     <section class="titulo">
       <h1>Integrantes Grupo 10 - Comisión 23543 Python</h1>
     </section>
@@ -64,21 +65,30 @@
         <div class="integrante">
           <img src="img/Integrantes/Diego2.webp" alt="">
           <h4>Diego</h4>
+          <div id="diego">           
+          </div>
+          
         </div>
 
         <div class="integrante">
           <img src="img/Integrantes/Diego3.webp" alt="">
           <h4>Mariano</h4>
+          <div id="mariano">           
+          </div>
         </div>
 
         <div class="integrante">
           <img src="img/Integrantes/Diego.webp" alt="">
           <h4>Lucas</h4>
+          <div id="lucas">           
+          </div>
         </div>
 
         <div class="integrante">
           <img src="img/Integrantes/Diego4.webp" alt="">
           <h4>Mariana</h4>
+          <div id="mariana">           
+          </div>
         </div>
     </section>
 

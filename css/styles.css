@@ -36,8 +36,21 @@ body, html {
   justify-content: center;
   background-color: black;
   text-align: center;
-  
 }
+.topicon_index  {
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  height: fit-content;
+  z-index: 1000;
+  justify-content: center;
+  background-color: black;
+  text-align: center;
+  font-family: rammstein;
+  font-size: 3.5em;
+}
+
 .topicon h1 {
   font-family: rammstein;
   text-align: center;
@@ -47,10 +60,11 @@ body, html {
   background-color: black;
   
 }
- .topicon a{
+ .topicon_index a{
     font-family: rammstein;
-    font-size: 3.5em;
+    width: fit-content;
     margin: 0.67em 0em;
+    
  }
 
 .contenedor {
@@ -65,6 +79,14 @@ body, html {
     height: 100%;
     position: static;
   }
+
+  #block2 {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: static;
+    display: none;
+  }  
   
   .nav {
     display: flex;
@@ -228,7 +250,7 @@ body, html {
     gap: 40px;
     justify-content: center;
     color: rgb(255, 255, 255);
-    background-color: #000;
+    background-color: #000000;
     font-family: 'Roboto', sans-serif;
     font-size: 1.4em;
 }
@@ -268,6 +290,19 @@ button{
     width:800px;
     height:580px;
 }
+
+.integrante div {
+  background-color: #c9c9c9;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  width: -webkit-fill-available;
+}
+.integrante p{
+  background-color: #ffffff00;
+  font-weight: 500;
+}
     
         /* -- integrantes --- */
 .titulo{
@@ -294,6 +329,7 @@ button{
     font-family: 'rocks', sans-serif;
     font-size: 3em;
     margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .grupo10 img{
@@ -379,7 +415,7 @@ footer  li,a, p {
 
 /* ---------- MEDIA ----------- */
 
-/* ---------- PANTALLAS MENORES A 1300PX ----------- */
+/* ---------- PANTALLAS MENORES A 1200PX ----------- */
 
 @media only screen and (max-width: 1200px){
    
@@ -401,21 +437,46 @@ footer  li,a, p {
 
     .collumn {
         width: 70%;
+        gap: 0px;
       }
+        /* Nosotros */
+       
+    .grupo10 img{
+      height: 400px;
+      padding: 50px;
+  }
+  
       
 
 }
 /* ---------- PANTALLAS MENORES A 800PX ----------- */
 
 @media only screen and (max-width: 800px){
+    #block {
+    display: none;
+    height: 60%;
+   }
+
+    #block2 {
+    display: block;
+    height: 100vh;
+    }
+
+    .topicon_index{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #00000000;
+    }
 
     .topicon h1 {
         font-size: 2em;
         padding-top: 10px;   
     }
 
-    .topicon a{
-      font-size: 2em;
+    .topicon_index a{
+      font-size: 0.4em;
     }
 
     .nav{    
@@ -430,9 +491,15 @@ footer  li,a, p {
         margin-bottom: 20px; 
     }
 
-    #block {
-      height: 60%;
-    }
+
+    .grupo10 .integrante{
+      margin: auto 10px;
+    } 
+
+    .grupo10 img{
+      height: 300px;
+      width: 300px;
+  }
 
     footer .footer_columna {
         width: 90%;
@@ -442,7 +509,6 @@ footer  li,a, p {
     .footer_linea p{
         height: 30px;
         width: 100%;
-        /* padding:20px 0px 10px 0px; */
         text-align: center;   
     }
 
@@ -456,4 +522,17 @@ footer  li,a, p {
     .articulo_historia{width:90% ;}
 
     .collumn {width: 100%;}
+
+    /* Nosotros */
+    .form_mapa h2{
+      font-size: 1.6em;
+    }
+
+
+    h1{
+      font-size: 2.6rem;
+    }  
+
+
+};  
 
