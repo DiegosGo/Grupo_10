@@ -452,6 +452,11 @@ footer  li,a, p {
 /* ---------- PANTALLAS MENORES A 800PX ----------- */
 
 @media only screen and (max-width: 800px){
+
+    .body_background{
+      background-color: #000;
+    }
+
     #block {
     display: none;
     height: 60%;
