@@ -67,6 +67,8 @@ body, html {
     
  }
 
+
+
 .contenedor {
   background-color: black;
   color: white;
@@ -411,6 +413,62 @@ footer  li,a, p {
 }
 
 
+/* -------------------------------------------------------------------------------------------------- */
+/* PRUEBA NAV MOVIL */
+  
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: center;
+}
+
+.topnav .logo {
+  font-size: 10vw;
+  font-family: rammstein;
+  text-align: center;
+  color: red;
+}
+
+.topnav #myLinks {
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#myLinks a {
+  font-family: gothamexp;
+  color: red;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 8vw;
+  
+}
+
+.topnav a {
+  font-family: gothamexp;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 4vw;
+}
+
+/* .topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} */
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
 
 
 /* ---------- MEDIA ----------- */
@@ -477,7 +535,8 @@ footer  li,a, p {
 
     .topicon h1 {
         font-size: 2em;
-        padding-top: 10px;   
+        padding-top: 10px;
+        display: none;   
     }
 
     .topicon_index a{
@@ -486,7 +545,7 @@ footer  li,a, p {
 
     .nav{    
         flex-direction: column;
-        
+        display: none;
     }
 
     .nav a{
@@ -537,6 +596,11 @@ footer  li,a, p {
     h1{
       font-size: 2.6rem;
     }  
+
+    .topnav {
+      display: flex;
+    }
+  
 
 
 };  
