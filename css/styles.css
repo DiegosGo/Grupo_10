@@ -447,6 +447,7 @@ footer  li,a, p {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 8vw;
+  font-size: 3em;
   
 }
 
@@ -547,6 +548,10 @@ footer  li,a, p {
         flex-direction: column;
         display: none;
     }
+    #nav10{
+      flex-direction: column;
+      display: flex;
+    }
 
     .nav a{
         font-size: 2em;
@@ -555,7 +560,7 @@ footer  li,a, p {
         margin-bottom: 20px; 
     }
 
-
+    
     .grupo10 .integrante{
       margin: auto 10px;
     } 
